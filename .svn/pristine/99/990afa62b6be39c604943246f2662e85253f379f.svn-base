@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/code_ui"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/tile_bg"
+         >
+
+        <TextView
+            android:id="@+id/welcome_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="15dip"
+            android:text="姓名"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="50dp"
+            android:text="学号"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/welcome_uid_eidt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="40dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/welcome_name_eidt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="75dip" />
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/welcome_logo_flipper"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp" 
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        >
+
+        <RelativeLayout
+            android:id="@+id/welcome_logo1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            
+             >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/welcome_logo_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+             >
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/welcome_login"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/welcome_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        
+         >
+
+    </LinearLayout>
+
+</RelativeLayout>
